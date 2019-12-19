@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+body {
+  background-color: lightsalmon;
+  font-family: Arial;
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
   color: white;
+  margin: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.front-page {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% auto auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup-page {
+  display: grid;
+  grid-template-columns: auto 60% auto;
+  grid-template-rows: 60% auto auto;
+}
+
+.signup-form {
+  display: grid;
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.login-form {
+  display: grid;
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.signup{
+  display: grid;
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  align-self: center;
+}
+
+label {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: maroon;
+}
+
+input {
+  margin: 10px;
+  padding: 4px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+button {
+  border-radius: 8px;
+  border-style: none;
+  margin: 4px 2px;
+  padding: 10px;
+  opacity: 1;
+  transition: 0.3s;
+  color: white;
+  background-color: maroon;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  opacity: 0.6
+}
+
+.feed {
+  display: grid;
+  /* text-align: center; */
+  width: 650px;
+  margin: auto;
+}
+
+.tweet-box {
+  display: grid;
+  margin: 10px;
+  /* text-align: center; */
+  /* width: 325px; */
+  /* margin: auto; */
+}
+
+.tweet-box textarea {
+  height: 100px;
+  border-radius: 8px;
+}
+
+.tweet-box button {
+  width: 85px;
+}
+
+.tweet-message {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+
+.tweet-name {
+  border-bottom: solid 1px lightsalmon;
+  color: maroon;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
