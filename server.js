@@ -112,8 +112,10 @@ api.post('/users', async function (req, res) {
     }, new Buffer(secret, 'base64'));
 
     res.send({ token: token });
-})
+});
+
+app.use('/api', api);
 
 app.listen(port, () => {
-    console.log('Twitter app is running og http://localhost:3333');
+    console.log(`Twitter app is running og http://localhost:${port}`);
 });

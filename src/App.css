@@ -1,7 +1,8 @@
 body {
   background-color: lightsalmon;
-  font-family: Arial;
+  font-family: 'Arial';
   display: grid;
+  
 }
 
 h1 {
